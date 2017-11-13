@@ -7,7 +7,7 @@ CMD=$1
 case "$CMD" in
   'start' )
     echo `pwd`
-    rm -f /data/src/tmp/pids/server.pid
+    rm -f /standardfile/tmp/pids/server.pid
     cd /standardfile/
     bundle exec rails db:create db:migrate
     bundle install
