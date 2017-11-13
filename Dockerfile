@@ -38,6 +38,7 @@ RUN mkdir -p /usr/local/etc \
 EXPOSE 3000
 
 COPY /docker /docker
+RUN chmod +x /docker/entrypoint
 
 ENTRYPOINT [ "/docker/entrypoint" ]
 CMD [ "start" ]
